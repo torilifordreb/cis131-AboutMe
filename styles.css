@@ -1,0 +1,334 @@
+:root {
+    --periBlue: #DCD6F7;
+    --purple: #63595C;
+    --blue: #539987;
+    --darkPeri: #A6B1E1;
+    --shadow: 0 1px 3px black;
+    --shadowPurple: 0 1px 3px #63595C;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--purple);
+    background-color: var(--periBlue);
+}
+
+/*Start Header Section*/
+
+#topHeader {
+    max-width: 100%;
+    text-align: end;
+    margin-right: 120px;
+}
+
+#topHeader ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20, 30, 20, 30;
+}
+
+#topHeader li {
+    display: inline;
+}
+
+#topHeader li a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#topHeader button {
+    background-color: var(--periBlue);
+    color: var(--purple);
+    border: none;
+    margin: 20px;
+    height: 40px;
+    width: 90px;
+}
+
+#topHeader button:hover {
+    background-color: var(--darkPeri);
+}
+
+/*End Header Section*/
+
+
+/*Start Intro Section*/
+
+.introFlexContainer {
+    display: flex;
+    height: 400px;
+}
+
+.introFlexContainer img {
+    max-width: 700px;
+    max-height: 400px;
+}
+
+.introFlexContainer #introText {
+    margin-top: 20px;
+    margin-right: 120px;
+}
+
+/*End Intro Section*/
+
+/*Start Footer Section*/
+#footer {
+    display: inline;
+    position: fixed;
+    bottom: 0;
+    padding-top: 5px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    color: var(--purple);
+    background-color: var(--darkPeri);
+}
+
+#footer a {
+    color: var(--purple);
+}
+
+#footer a:hover {
+    color: var(--periBlue);
+}
+
+/*end Footer Section*/
+
+
+
+
+
+/*start About.html - specific*/
+div#aboutInfo {
+    height: fit-content;
+    width: 85%;
+    text-align: center;
+    background-color: var(--purple);
+    box-shadow: var(--shadow);
+    margin: auto;
+    color: var(--periBlue);
+}
+
+div#aboutInfo h2 {
+    padding-top: 10px;
+}
+
+div#aboutInfo h4 {
+    padding: 0px 50px 20px 50px;
+}
+
+div#outerFlexContainer {
+    display: flex;
+    width: 100%;
+}
+
+div#educationDiv {
+    width: 70%;
+    height: fit-content;
+}
+
+div.educationTitle {
+    height: fit-content;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+section.aboutContainer {
+    /* background-color: var(--darkPeri); */
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    text-align: center;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px black double;
+}
+
+section.aboutContainer div.compCourses h5 {
+    text-shadow: var(--shadow);
+}
+
+section.aboutContainer.completedCourses {
+    width: 45%;
+}
+
+section.aboutContainer div.enrolledCourses h5 {
+    text-shadow: var(--shadow);
+}
+
+section.aboutContainer.enrolledCourses {
+    width: 45%;
+}
+
+section.resumeContainer {
+    margin: 75px 0px 0px 50px;
+    align-items: center;
+}
+
+section.resumeContainer button.resumeBtn {
+    width: 120px;
+    height: 60px;
+    background-color: var(--purple);
+    box-shadow: var(--shadow);
+    margin-top: 30px;
+}
+
+section.resumeContainer button.resumeBtn:hover {
+    background-color: var(--periBlue);
+}
+
+section.resumeContainer button.resumeBtn a {
+    text-decoration: none;
+    color: var(--periBlue);
+}
+
+section.resumeContainer button.resumeBtn:hover a {
+    color: var(--purple);
+}
+
+/*end about.html*/
+
+
+
+/*Start projects.html -specific*/
+
+div.outerTitleBox {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.projectsTitle {
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+    border: 2px #63595C double;
+    box-shadow: var(--shadow);
+}
+
+div#outerProjFlex {
+    display: flex;
+    width: 99%;
+    text-align: center;
+    padding: 10px;
+}
+
+div#outerProjFlex img {
+    width: 330px;
+    height: auto;
+}
+
+div#outerProjFlex div.leftBox {
+    margin: auto;
+    width: 32%;
+    background-color: var(--darkPeri);
+}
+
+div#outerProjFlex div.middleBox {
+    width: 32%;
+    margin: auto;
+}
+
+div#outerProjFlex div.rightBox {
+    margin: auto;
+    width: 32%;
+    background-color: var(--darkPeri);
+}
+
+div#outerProjFlex div.middleBox button.gitBtn {
+    background-color: var(--purple);
+    border: none;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+div#outerProjFlex div.middleBox button.gitBtn i {
+    color: var(--darkPeri);
+    font-size: 50px;
+}
+
+div#outerProjFlex div.middleBox button.gitBtn:hover {
+    background-color: var(--darkPeri);
+    width: 50px;
+    height: 50px;
+}
+
+div#outerProjFlex div.middleBox button.gitBtn:hover i {
+    color: var(--purple);
+    font-size: 40px;
+}
+
+/*end projects.html*/
+
+
+
+
+/*Start contact.html -specific*/
+
+div#contactBodyDiv {
+    display: flex;
+    width: 99%;
+}
+
+div#contactBodyDiv div.contactImgDiv {
+    width: 48%;
+    padding-left: 120px;
+
+    padding-right: 0px;
+}
+
+div#contactBodyDiv div.contactImgDiv img {
+    max-width: auto;
+    max-height: 450px;
+}
+
+div#contactBodyDiv div.contactInfoDiv {
+    width: 48%;
+    border-left: 1px var(--purple) double;
+    padding-top: 70px;
+    text-align: center;
+}
+
+div#contactBodyDiv div.contactInfoDiv h2.contactHeader {
+    max-width: fit-content;
+    background-color: var(--purple);
+    color: var(--periBlue);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+div#contactBodyDiv div.contactInfoDiv div.fillForm {
+    padding-top: 30px;
+}
+
+div#contactBodyDiv div.contactInfoDiv div.fillForm input[type=submit] {
+    height: 30px;
+    width: 60px;
+    background-color: var(--purple);
+    color: var(--periBlue);
+}
+
+div#contactBodyDiv div.contactInfoDiv div.fillForm input[type=submit]:hover{
+    background-color: var(--periBlue);
+    color: var(--purple);
+}
+
+
+/*end contact.html*/
